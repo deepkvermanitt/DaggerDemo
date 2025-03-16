@@ -4,4 +4,7 @@ import javax.inject.Singleton
 
 @Singleton
 class DatabaseService {
+    fun getData(): String {
+        return "Data from Database Service"
+    }
 }

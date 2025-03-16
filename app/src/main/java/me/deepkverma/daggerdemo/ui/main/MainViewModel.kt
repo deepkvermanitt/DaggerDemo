@@ -7,10 +7,10 @@ import javax.inject.Inject
 
 @AcitivityScope
 class MainViewModel @Inject constructor(
-private val fileHelper: FileHelper
+    private val fileHelper: FileHelper, private val dataBaseService: DatabaseService
 ) {
 
     fun getSomeDate(): String {
-        return "Data from mainViewModel"
+        return "${fileHelper.getFilePath()} & Data from mainViewModel  & ${dataBaseService.getData()}"
     }
 }

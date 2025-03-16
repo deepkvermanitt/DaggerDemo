@@ -1,6 +1,7 @@
 package me.deepkverma.daggerdemo.data
 
-import javax.inject.Singleton
-
 class FileHelper {
+    fun getFilePath(): String {
+        return "Data from File Helper"
+    }
 }

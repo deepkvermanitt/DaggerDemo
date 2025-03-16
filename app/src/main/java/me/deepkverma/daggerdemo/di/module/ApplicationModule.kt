@@ -2,6 +2,7 @@ package me.deepkverma.daggerdemo.di.module
 
 import dagger.Module
 import dagger.Provides
+import me.amitshekhar.dagger.learning.data.local.DatabaseService
 import me.deepkverma.daggerdemo.MyApplication
 import me.deepkverma.daggerdemo.data.FileHelper
 import javax.inject.Singleton
@@ -19,4 +20,5 @@ class ApplicationModule(private val application: MyApplication) {
     fun getFileHelper(): FileHelper {
         return FileHelper()
     }
+
 }
